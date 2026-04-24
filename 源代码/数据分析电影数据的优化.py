@@ -109,7 +109,8 @@ def plot_movies_by_rating(movies_data, ax):
 def main():
     """主函数：执行所有数据分析和可视化"""
     # 设置数据文件路径
-    data_file = "D:\\BaiduNetdiskDownload\\数据分析\\movies.csv"
+    filepath = input('请输入文件路径').strip().strip('"').strip("'")
+    data_file = filepath
 
     # 检查文件是否存在
     if not Path(data_file).exists():
